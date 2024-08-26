@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  marketplace-node:
+    image: marketplace:node
+    container_name: "marketplace"
+    ports:
+      - "3443:3443"
+    networks:
+      - testbed
+
+networks:
+  testbed:
+    name: testbed
+    ipam:
+      config:
+        - subnet: 172.100.0.0/16

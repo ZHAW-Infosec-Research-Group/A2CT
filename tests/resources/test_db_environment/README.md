@@ -1,0 +1,1 @@
+Test folder where responses.db for certain tests are copied to during test execution.

@@ -1,0 +1,42 @@
+<div id="header">
+  <h1>Login</h1>
+  {{#if messages}}
+    <ul class="messages">
+      {{#each messages}}
+        <li class="redItalicText">{{ message }}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
+
+<div id="loginData">
+  <form action="/login" method='POST'>
+    <table>
+      <tr>
+        <td>Username:</td>
+        <td><input type="text" name="username"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value='Login' /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<div id="navigation">
+  <table>
+    <tr>
+      <td>
+        <form action="/products" method="GET" >
+        <input type="submit" value='Return to products page' />
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>

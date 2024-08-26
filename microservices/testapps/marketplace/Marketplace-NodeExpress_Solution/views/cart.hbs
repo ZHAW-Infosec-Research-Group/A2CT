@@ -1,0 +1,39 @@
+<div id="header">
+  <h1>Your Shopping Cart</h1>
+</div>
+
+<div id="cartContent">	
+  {{#if productList.length}}
+    <table class="list">
+      <tr>
+        <th>Description</th>
+        <th>Price (CHF)</th>
+      </tr>      
+      {{#each productList}}
+        <tr>
+          <td>{{ description }}</td>
+          <td>{{ price }}</td>
+        </tr>
+      {{/each}}
+    </table>
+  {{else}}
+    <p>Your cart is empty</p>    
+  {{/if}}
+</div>
+
+<div id="navigation">
+  <table>
+    <tr>
+      <td>
+        <form action='/products' method="GET" >
+          <input type="submit" value='Return to products page' />  
+        </form>
+      </td>
+      <td>
+        <form action='/checkout' method="GET" >
+          <input type="submit" value='Checkout' />
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>

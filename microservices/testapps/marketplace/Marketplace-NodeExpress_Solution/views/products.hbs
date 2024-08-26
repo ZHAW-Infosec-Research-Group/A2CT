@@ -1,0 +1,67 @@
+<div id="header">
+  <h1>Welcome to Marketplace</h1>
+  {{#if messages}}
+    <ul class="messages">
+      {{#each messages}}
+        <li class="redItalicText">{{ message }}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
+
+<div id="productSearch">
+  <p>To search for products, enter any search string below and click the Search button.</p>
+  
+  <form action="/products" method="GET" >
+    <input type="text" name="filter" />
+    <input type="submit" value='Search' />
+  </form>
+  
+  <p>Search results for: <span class="boldText">{{ filter }}</span></p>
+ 
+  {{#if productList.length}}
+    <table class="list">
+      <tr>
+        <th>Description</th>
+        <th>Price (CHF)</th>
+        <th></th>
+      </tr>      
+      {{#each productList}}
+        <tr>
+          <td>{{ description }}</td>
+          <td class='price'>{{ price }}</td>
+          <td>
+            <form action="/cart_add" method="POST">
+              <input type="hidden" name="productId" value={{ productId }} />
+              <input type="submit" value='Add to cart' />
+            </form>
+          </td>
+        </tr>
+      {{/each}}
+    </table>
+  {{else}}
+    <p>No products match your search</p>    
+  {{/if}}
+</div>
+  
+<div id="navigation">
+  <table>
+    <tr>
+      <td>
+        <form action='/cart' method="GET" >
+          <input type="submit" value='Show cart' />
+        </form>
+      </td>
+      <td>
+        <form action='/checkout' method="GET" >
+          <input type="submit" value='Checkout' />
+        </form>
+      </td>
+      <td>
+        <form action='/admin_area' method="GET" >
+          <input type="submit" value='Admin area' />
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>

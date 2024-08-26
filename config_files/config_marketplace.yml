@@ -1,0 +1,37 @@
+target:
+  target_url: https://172.17.0.1:3443/
+  target_domain: 172.17.0.1
+  path_to_db: /opt/mitmproxy/db/
+  reset_script: ./reset_scripts/reset_marketplace.py
+  auth_script: ./auth_scripts/auth_marketplace.js
+auth:
+  users:
+    - donald: daisy
+    - alice: rabbit
+    - robin: arrow
+    - luke: force
+  tokens:
+    - donald: Cookie marketplacecookie.sid=s%3Aay2vmxxJa9CWq9z2Pj0_2vR_mSPaz9oZ.z13xunB5UH0PoyI2Vj1B4oqxquoQlkIKdhvzaFkiGIo
+    - alice: Cookie marketplacecookie.sid=s%3ASGcb7WGygXvySK3HInSdSYcI0U_MerQR.R%2FdBlWo1QvOVF60teXfcL%2B9mxeNmJShKvAln3LD23Io
+    - robin: Cookie marketplacecookie.sid=s%3ArZ4EvHVMZgHXHQ0LwLdrlLkqSAdbW9kH.r9RdX7mD8INT83jJvn7BCvxSPCvnhHgdKBxlGcz5tKU
+    - luke: Cookie marketplacecookie.sid=s%3ACY_Ix4OgVOdhDKJD4QvzWqj0zm-RuGIi.SIT7%2FDmCSE1nYEQc1fmY6OTRBQ4YexwdTHOi6GFY%2FBA
+  combinations:
+    type: selected
+    user_pairs:
+      - donald alice
+      - donald robin
+      - donald luke
+      - donald public
+      - alice donald
+      - alice robin
+      - alice public
+payloadfile: /home/user/A2CT/vars/marketplace.yml
+options:
+  standard_pages: about.php,credits.php
+  do_not_call_pages: log-out|logout|logoff
+  static_content_extensions: js,css,img,jpg,png,svg,gif,woff2,ttf
+  ignore_tokens: tokenCSRF|csrfmiddlewaretoken|form_key
+  html_stripping_tags: null
+  string_to_match: null
+  regex_to_match: null
+  inter_threshold_validating: 80

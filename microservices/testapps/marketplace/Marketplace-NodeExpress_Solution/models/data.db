@@ -1,0 +1,19 @@
+INSERT INTO Product VALUES 
+  (1, '0001', 'DVD Life of Brian - used, some scratches but still works', 5.95, 'donald'),
+  (2, '0002', 'Ferrari F50 - red, 43000 km, no accidents', 250000.00, 'luke'),
+  (3, '0003', 'Commodore C64 - used, the best computer ever built', 444.95, 'luke'),
+  (4, '0004', 'Printed Software-Security script - brand new', 10.95, 'donald');
+
+INSERT INTO Purchase VALUES
+  (1, 'Ferrari', 'Driver', '1111 2222 3333 4444', 250000.00),
+  (2, 'C64', 'Freak', '1234 5678 9012 3456', 444.95),
+  (3, 'Script', 'Lover', '5555 6666 7777 8888', 10.95);
+
+INSERT INTO User VALUES
+  ('alice', 'rabbit', 'sales'),
+  ('bob', 'patrick', 'burgerman'),
+  ('donald', 'daisy', 'productmanager'),
+  ('john', 'wildwest', 'sales'),
+  ('luke', 'force', 'productmanager'),
+  ('robin', 'arrow','marketing'),
+  ('snoopy', 'woodstock', 'productmanager');

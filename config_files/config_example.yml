@@ -1,0 +1,32 @@
+target:
+  target_url: https://172.17.0.1:3443/
+  target_domain: 172.17.0.1
+  path_to_db: /opt/mitmproxy/db/
+  reset_script: ./reset_scripts/reset_example.py
+  auth_script: ./auth_scripts/auth_example.js
+auth:
+  users:
+    - admin: Lo7Y.oCe?ULa
+    - seller1: xIMp6aSTw-ue
+    - seller2: uGm_natE&r2m
+  tokens:
+    - admin: Cookie ...
+    - seller1: Cookie ...
+    - seller2: Cookie ...
+  combinations:
+    type: selected
+    user_pairs:
+      - admin public
+      - admin seller1
+      - seller1 public
+      - seller1 seller2
+payloadfile: /home/user/A2CT/vars/default_vars.yml
+options:
+  standard_pages: about.php,credits.php
+  do_not_call_pages: log-out|logout|logoff
+  static_content_extensions: js,css,img,jpg,png,svg,gif,woff2,ttf
+  ignore_tokens: tokenCSRF|csrfmiddlewaretoken|form_key
+  html_stripping_tags: null
+  string_to_match: null
+  regex_to_match: access denied|unauthorized
+  inter_threshold_validating: 80

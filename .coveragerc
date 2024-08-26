@@ -1,0 +1,6 @@
+# .coveragerc to control coverage.py
+
+[report]
+omit = 
+    # omit files from being shown in test coverage report
+    modules/__init__.py

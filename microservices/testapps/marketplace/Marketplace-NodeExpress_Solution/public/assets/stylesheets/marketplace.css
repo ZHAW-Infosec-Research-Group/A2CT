@@ -1,0 +1,50 @@
+body {
+	background-color: #D2EDF0;
+	font-family: Arial, sans-serif;
+}
+
+.redItalicText, .error {
+	color: red;
+	font-style: italic;
+}
+
+.boldText {
+	font-weight: bold;
+}
+
+table.list {
+    border-collapse: collapse;
+}
+ 
+table.list th,
+table.list td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+}
+ 
+table.list th {
+    background-color: #ddd;
+    color: #BB0000;
+    border-bottom: 2px solid black;
+}
+ 
+table.list tr:nth-child(even) {
+    background-color: #FFE8D0;
+}
+ 
+table.list tr:nth-child(odd) {
+    background-color: #FBFBFB;
+}
+
+table.list td.price {
+	text-align: right;
+}
+
+table.list td.link {
+	color: red;
+}
+
+#navigation {
+	margin-top: 10px;
+}

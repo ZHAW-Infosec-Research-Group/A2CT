@@ -1,0 +1,46 @@
+<div id="header">
+  <h1>Add Product</h1>
+</div>
+
+<div id="productData">
+  <p>Please provide the following information to add a product:</p>
+
+  <form action="/admin_product_add" method='POST'>
+    <table>
+      <tr>
+        <td>Code:</td>
+        <td><input type="text" name="code"></td>
+        <td class="redItalicText">{{ validationErrors.code.msg }}</td>
+
+      </tr>
+      <tr>
+        <td>Description:</td>
+        <td><input type="text" name="description" /></td>
+        <td class="redItalicText">{{ validationErrors.description.msg }}</td>
+
+      </tr>
+      <tr>
+        <td>Price:</td>
+        <td><input type="text" name="price" /></td>
+        <td class="redItalicText">{{ validationErrors.price.msg }}</td>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value='Add product' /></td>
+      </tr>
+    </table>
+  </form>
+</div>
+
+<div id="navigation">
+  <table>
+    <tr>
+      <td>
+        <form action='/admin_area' method="GET" >
+          <input type="submit" value='Return to admin area' />
+        </form>
+      </td>
+    </tr>
+  </table>
+</div>

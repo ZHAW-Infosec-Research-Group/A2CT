@@ -1,0 +1,28 @@
+{
+  "name": "playwright-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entrypoint.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.1",
+    "playwright": "^1.30.0"
+  },
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "js-yaml": "4.0.0",
+    "playwright": "^1.30.0",
+    "playwright-dompath": "^0.0.7"
+  },
+  "jest": {
+    "rootDir": "./",
+    "modulePaths": [
+      "<rootDir>"
+    ]
+  }
+}
