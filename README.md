@@ -21,7 +21,9 @@ Kushnir, Malte; Favre, Olivier; Rennhard, Marc; Esposito, Damiano; Zahnd, Valent
 
 Rennhard, Marc; Kushnir, Malte; Favre, Olivier; Esposito, Damiano; Zahnd, Valentin, 2022. Automating the detection of access control vulnerabilities in web applications. SN Computer Science. 3(5), Available at: https://doi.org/10.1007/s42979-022-01271-1
 
-Schlaubitz, Michael; Veyisoglu Onur; Rennhard, 2025. A2CT: Automated Detection of Function- and Object-Level Access Control Vulnerabilities in Web Applications. In: Proceedings of the 11th International Conference on Information Systems Security and Privacy. ICISSP 2025, Porto, Portugal, 20-22 February 2025. To appear.
+Schlaubitz, Michael; Veyisoglu Onur; Rennhard, Marc, 2025. A2CT: Automated Detection of Function- and Object-Level Access Control Vulnerabilities in Web Applications. In: Proceedings of the 11th International Conference on Information Systems Security and Privacy. ICISSP 2025, Porto, Portugal, 20-22 February 2025. To appear.
+
+The following vulnerabilities were detected uasing A2CT: [CVE-2024-2730](https://nvd.nist.gov/vuln/detail/cve-2024-2730)
 
 # Installation
 
