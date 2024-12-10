@@ -23,7 +23,9 @@ Rennhard, Marc; Kushnir, Malte; Favre, Olivier; Esposito, Damiano; Zahnd, Valent
 
 Schlaubitz, Michael; Veyisoglu Onur; Rennhard, Marc, 2025. A2CT: Automated Detection of Function- and Object-Level Access Control Vulnerabilities in Web Applications. In: Proceedings of the 11th International Conference on Information Systems Security and Privacy. ICISSP 2025, Porto, Portugal, 20-22 February 2025. To appear.
 
-The following vulnerabilities were detected uasing A2CT: [CVE-2024-2730](https://nvd.nist.gov/vuln/detail/cve-2024-2730)
+## Detected Vulnerabilities
+
+The following vulnerabilities were detected uasing A2CT: [CVE-2024-2730](https://nvd.nist.gov/vuln/detail/cve-2024-2730), [CVE-2024-2731](https://nvd.nist.gov/vuln/detail/cve-2024-2731), [CVE-2024-3448](https://nvd.nist.gov/vuln/detail/cve-2024-3448), [CVE-2024-12305](https://nvd.nist.gov/vuln/detail/cve-2024-12305), [CVE-2024-12306](https://nvd.nist.gov/vuln/detail/cve-2024-12306), [CVE-2024-12307](https://nvd.nist.gov/vuln/detail/cve-2024-12307)
 
 # Installation
 
