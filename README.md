@@ -25,7 +25,7 @@ Schlaubitz, Michael; Veyisoglu Onur; Rennhard, Marc, 2025. A2CT: Automated Detec
 
 ## Detected Vulnerabilities
 
-The following vulnerabilities were detected uasing A2CT: [CVE-2024-2730](https://www.cve.org/CVERecord?id=CVE-2024-2730), [CVE-2024-2731](https://www.cve.org/CVERecord?id=CVE-2024-2731), [CVE-2024-3448](https://www.cve.org/CVERecord?id=CVE-2024-3448), [CVE-2024-12305](https://www.cve.org/CVERecord?id=CVE-2024-12305), [CVE-2024-12306](https://www.cve.org/CVERecord?id=CVE-2024-12306), [CVE-2024-12307](https://www.cve.org/CVERecord?id=CVE-2024-12307)
+The following vulnerabilities were detected using A2CT: [CVE-2024-2730](https://www.cve.org/CVERecord?id=CVE-2024-2730), [CVE-2024-2731](https://www.cve.org/CVERecord?id=CVE-2024-2731), [CVE-2024-3448](https://www.cve.org/CVERecord?id=CVE-2024-3448), [CVE-2024-12305](https://www.cve.org/CVERecord?id=CVE-2024-12305), [CVE-2024-12306](https://www.cve.org/CVERecord?id=CVE-2024-12306), [CVE-2024-12307](https://www.cve.org/CVERecord?id=CVE-2024-12307)
 
 # Installation
 
